@@ -23,7 +23,7 @@ The dataset is published by the ASSISTments project for research use. Learner ID
 
 > Feng, M., Heffernan, N. T., & Koedinger, K. R. (2009). Addressing the assessment challenge with an online system that tutors as it assesses. *User Modeling and User-Adapted Interaction*, 19(3), 243–266.
 
-Please also follow the ASSISTments data-use terms on the official ASSISTments dataset pages.
+Please also follow the ASSISTments data-use terms on the official ASSISTments dataset pages. This repository does not relicense the data; see [../RIGHTS.md](../RIGHTS.md).
 
 ## Derived data
 All derived datasets (HyperKT predictions, event crosswalk, aligned reward/transition tables, response-model predictions) are in each stage's `outputs/` folder and described in that stage's README.
