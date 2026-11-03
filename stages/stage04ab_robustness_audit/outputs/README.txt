@@ -1,0 +1,1 @@
+SHIVA-LLM Objective 02 Stage 4A-B. Observational predictive calibration and assumed one-step reward robustness only. No authenticated interventions, causal action effects, or validated longitudinal transitions.

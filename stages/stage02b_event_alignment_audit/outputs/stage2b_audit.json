@@ -1,0 +1,18 @@
+{
+  "stage": "objective02_stage2b",
+  "stage1_rows": 342643,
+  "hyperkt_rows": 278942,
+  "stage1_users": 4097,
+  "hyperkt_users": 4027,
+  "split_conflict_users": 1694,
+  "event_alignment_verified": false,
+  "warning": "Stage 2 window_index and position do not identify original events; do not join by learner or ordinal position.",
+  "hyperkt_state_semantics": "pre-response target-skill correctness probability, not full latent state",
+  "crosswalk_required_columns": [
+    "split",
+    "window_index",
+    "position",
+    "user_id",
+    "order_id"
+  ]
+}

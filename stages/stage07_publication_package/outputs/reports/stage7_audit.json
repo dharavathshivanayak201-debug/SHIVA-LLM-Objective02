@@ -1,0 +1,13 @@
+{
+  "stage": "7",
+  "cross_stage_integrity_passed": true,
+  "test_events": 32522,
+  "test_learners": 402,
+  "selected_model": "tree_depth_2",
+  "selected_reward": "balanced",
+  "max_stage5_stage6_difference": 5.551115123125783e-17,
+  "real_causal_effect_established": false,
+  "real_learning_improvement_established": false,
+  "sequential_reinforcement_learning_evaluated": false,
+  "posthoc_analyses_used_for_model_selection": false
+}

@@ -1,0 +1,5 @@
+{
+  "max_absolute_reward_difference": 5.551115123125783e-17,
+  "exact_reproduction_within_1e_8": true,
+  "warning": "If reproduction fails, interpret new baseline comparisons as a separate implementation."
+}

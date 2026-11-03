@@ -1,0 +1,28 @@
+{
+  "stage": "5",
+  "title": "Comprehensive simulated contextual-bandit evaluation",
+  "inputs": [
+    "objective02_stage4a_simulator.zip",
+    "objective02_stage4ac_reward_redesign.zip",
+    "objective02_stage4b_policy_optimization.zip"
+  ],
+  "frozen_policy": "tree_depth_2",
+  "frozen_reward": "balanced",
+  "moderate_learned_minus_readiness_rule": 0.003965466153199482,
+  "moderate_learned_minus_best_fixed": 0.025206869589027958,
+  "replication_max_absolute_reward_difference": 5.551115123125783e-17,
+  "stage4b_replication_pass": true,
+  "held_out_test_used_only_for_analysis": true,
+  "test_events": 32522,
+  "test_learners": 402,
+  "real_causal_effect_identified": false,
+  "real_learning_improvement_established": false,
+  "sequential_rl_evaluated": false,
+  "caveats": [
+    "One-step synthetic actions; no authenticated interventions.",
+    "Reward weights, challenge credits, costs, and effects are assumed.",
+    "Oracle and learned policy share the same synthetic reward specification.",
+    "Bootstrap intervals exclude uncertainty about action-effect assumptions.",
+    "Test sensitivity results are exploratory and cannot be used to tune policy without a new holdout."
+  ]
+}

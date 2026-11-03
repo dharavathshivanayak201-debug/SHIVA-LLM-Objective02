@@ -1,0 +1,29 @@
+{
+  "crosswalk_events": 278942,
+  "stage1_events": 342643,
+  "matched_events": 275272,
+  "unmatched_crosswalk_events": 3670,
+  "split_conflicts_on_matched_events": 111284,
+  "eligible_for_action_diagnostics": 275272,
+  "hyperkt_split_counts": {
+    "train": 222562,
+    "test": 32522,
+    "val": 23858
+  },
+  "weights": {
+    "performance": 0.6,
+    "efficiency_proxy": 0.2,
+    "suitability_proxy": 0.2
+  },
+  "reward_components": {
+    "performance": "observed current target correctness",
+    "efficiency_proxy": "1/(1+prior_attempts); prior history only; not actual cost",
+    "suitability_proxy": "clipped proximity of predicted correctness to 0.65; not measured difficulty"
+  },
+  "state_warning": "HyperKT correctness probabilities are not full latent states",
+  "action_warning": "Stage 1 logged_action is not authenticated as a real instructional intervention",
+  "split_policy": "HyperKT split authoritative; Stage 1 split discarded for evaluation",
+  "transition_warning": "next observed exported event may skip original interactions; subset_terminal not true episode termination",
+  "offline_policy_training_ready": false,
+  "causal_policy_evaluation_ready": false
+}

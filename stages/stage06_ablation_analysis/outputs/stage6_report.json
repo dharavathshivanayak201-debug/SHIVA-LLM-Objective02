@@ -1,0 +1,86 @@
+{
+  "stage": "6",
+  "experiment": "Frozen-policy simulated ablations",
+  "test_events": 32522,
+  "test_learners": 402,
+  "selected_model": "tree_depth_2",
+  "stage5_replication_max_error": 5.551115123125783e-17,
+  "original_reward": {
+    "wc": 0.3,
+    "wm": 0.4,
+    "ws": 0.25,
+    "wk": 0.05,
+    "tau": 0.7,
+    "h": 0.2
+  },
+  "effect_scenarios": {
+    "zero": 0.0,
+    "small": 0.15,
+    "moderate": 0.4,
+    "large": 0.8
+  },
+  "reward_ablation_weights": {
+    "full": {
+      "wc": 0.3,
+      "wm": 0.4,
+      "ws": 0.25,
+      "wk": 0.05,
+      "tau": 0.7,
+      "h": 0.2
+    },
+    "no_correctness": {
+      "wc": 0.0,
+      "wm": 0.5714285714285714,
+      "ws": 0.3571428571428571,
+      "wk": 0.07142857142857142,
+      "tau": 0.7,
+      "h": 0.2
+    },
+    "no_challenge": {
+      "wc": 0.5,
+      "wm": 0.0,
+      "ws": 0.4166666666666667,
+      "wk": 0.08333333333333334,
+      "tau": 0.7,
+      "h": 0.2
+    },
+    "no_suitability": {
+      "wc": 0.39999999999999997,
+      "wm": 0.5333333333333333,
+      "ws": 0.0,
+      "wk": 0.06666666666666667,
+      "tau": 0.7,
+      "h": 0.2
+    },
+    "no_cost": {
+      "wc": 0.3157894736842105,
+      "wm": 0.4210526315789474,
+      "ws": 0.2631578947368421,
+      "wk": 0.0,
+      "tau": 0.7,
+      "h": 0.2
+    }
+  },
+  "readiness_perturbations": [
+    "none",
+    "gaussian_0.025",
+    "gaussian_0.05",
+    "gaussian_0.10",
+    "bias_plus_0.05",
+    "bias_minus_0.05",
+    "shuffle_within_learner"
+  ],
+  "policy_retrained": false,
+  "test_used_for_selection": false,
+  "analyses_are_posthoc_exploratory": true,
+  "observed_causal_action_effects": false,
+  "validated_longitudinal_RL": false,
+  "real_world_learning_gain_established": false,
+  "limitations": [
+    "Reward ablations change the objective and must not be compared as identical utility scales.",
+    "Readiness perturbations act on the single frozen-policy input, not directly on the HyperKT model.",
+    "Test-set stress analyses are exploratory and cannot be used to choose a revised policy.",
+    "Paired bootstrap CIs condition on synthetic action effects and reward assumptions.",
+    "Synthetic challenge credit is not observed mastery improvement."
+  ]
+}
