@@ -73,5 +73,8 @@ Files over 20 MB are stored gzip-compressed (`*.csv.gz`). pandas reads them dire
 ## Related work
 Part of a multi-objective research thesis. The readiness signal comes from the HyperKT knowledge-tracing model of Objective 01: [HyperKT-Knowledge-Tracing](https://github.com/dharavathshivanayak201-debug/HyperKT-Knowledge-Tracing).
 
+## Rights and licensing
+No open-source license has been selected. See [RIGHTS.md](RIGHTS.md); the same approach is used across all thesis objectives.
+
 ## Citation
 Citation details will be added once the Objective 02 manuscript is available. If you use the dataset, cite ASSISTments as described in [data/README.md](data/README.md).
