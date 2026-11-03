@@ -1,0 +1,13 @@
+scenario,assumed_log_odds_effect,policy,n_contexts,mean_simulated_expected_reward
+small,0.15,fixed_easy,32522,0.7291118744560731
+small,0.15,fixed_medium,32522,0.6751110999249492
+small,0.15,fixed_hard,32522,0.6099781274257867
+small,0.15,random,32522,0.6716013254617423
+moderate,0.4,fixed_easy,32522,0.7499744149499687
+moderate,0.4,fixed_medium,32522,0.6751110999249492
+moderate,0.4,fixed_hard,32522,0.5820136912991376
+moderate,0.4,random,32522,0.6692733292426916
+large,0.8,fixed_easy,32522,0.7778038474292539
+large,0.8,fixed_medium,32522,0.6751110999249492
+large,0.8,fixed_hard,32522,0.5294924321198615
+large,0.8,random,32522,0.6611273254317328

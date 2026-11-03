@@ -1,0 +1,118 @@
+{
+  "stage": "4A-C",
+  "input_stage4a_spec": {
+    "stage": "4A",
+    "method": "one_step_contextual_bandit_simulator",
+    "seed": 42,
+    "data_provenance": "HyperKT stage3, stage3b audits",
+    "action_labels": {
+      "0": "easy",
+      "1": "medium",
+      "2": "hard"
+    },
+    "action_effect_log_odds_scenarios": {
+      "small": 0.15,
+      "moderate": 0.4,
+      "large": 0.8
+    },
+    "assumed_action_costs": {
+      "easy": 0.15,
+      "medium": 0.35,
+      "hard": 0.6
+    },
+    "reward_weights": {
+      "correctness": 0.6,
+      "efficiency_proxy": 0.2,
+      "suitability_proxy": 0.2
+    },
+    "feature_columns": [
+      "hyperkt_pred_correct",
+      "prior_accuracy",
+      "prior_attempts"
+    ],
+    "train_only_fit": true,
+    "split_policy": "original HyperKT learner-disjoint partitions",
+    "observed_action_is_authentic": false,
+    "counterfactual_effect_identified": false,
+    "longitudinal_transition_model_validated": false,
+    "offline_rl_ready": false,
+    "note": "Only observational correctness calibration is empirically evaluated; action effects are assumed and cannot support real-world causal claims."
+  },
+  "input_stage4ab_audit": {
+    "stage": "4A-B",
+    "input_zip": "objective02_stage4a_simulator.zip",
+    "n_test": 32522,
+    "test_brier": 0.18517242912641335,
+    "test_auc": 0.7419540784568137,
+    "test_calibration_in_the_large": 0.0031622754270410613,
+    "moderate_original_easy_optimal_fraction": 1.0,
+    "moderate_original_oracle_minus_easy": 0.0,
+    "predictive_metrics_are_observational": true,
+    "action_effects_are_assumed": true,
+    "causal_action_effects_identified": false,
+    "sequential_transition_model_validated": false,
+    "real_world_policy_gain_established": false,
+    "ready_for_causal_offline_rl": false,
+    "next_recommendation": "Do not claim causal policy improvement. Review reward dominance; if proceeding, use assumption-labeled one-step contextual-bandit benchmarks only."
+  },
+  "selected_design": "balanced",
+  "designs": {
+    "original_like": {
+      "wc": 0.6,
+      "wm": 0.0,
+      "ws": 0.2,
+      "wk": 0.2,
+      "tau": 0.65,
+      "h": 0.18
+    },
+    "balanced": {
+      "wc": 0.3,
+      "wm": 0.4,
+      "ws": 0.25,
+      "wk": 0.05,
+      "tau": 0.7,
+      "h": 0.2
+    },
+    "mastery_focus": {
+      "wc": 0.2,
+      "wm": 0.55,
+      "ws": 0.2,
+      "wk": 0.05,
+      "tau": 0.75,
+      "h": 0.2
+    },
+    "suitability": {
+      "wc": 0.15,
+      "wm": 0.2,
+      "ws": 0.6,
+      "wk": 0.05,
+      "tau": 0.7,
+      "h": 0.14
+    }
+  },
+  "assumed_effect_scenarios": {
+    "zero": 0.0,
+    "small": 0.15,
+    "moderate": 0.4,
+    "large": 0.8
+  },
+  "challenge_credits": [
+    0.2,
+    0.6,
+    1.0
+  ],
+  "assumed_costs": [
+    0.15,
+    0.35,
+    0.6
+  ],
+  "validation_only_selection": true,
+  "locked_test_audit": true,
+  "moderate_test_action_diversity": 0.3964700817907878,
+  "moderate_test_oracle_minus_best_fixed": 0.02520686966072394,
+  "nontrivial_simulated_policy_at_moderate_effect": true,
+  "causal_effects_identified": false,
+  "actual_learning_gain_established": false,
+  "sequential_RL_ready": false,
+  "interpretation": "All reward improvements are in-model assumed utility; no causal or longitudinal claims."
+}

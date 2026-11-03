@@ -1,0 +1,15 @@
+{
+  "input_events": 278942,
+  "learners": 4027,
+  "matched_action_rows": 275272,
+  "stage1_split_conflicts": 111284,
+  "hyperkt_partition_disjoint": true,
+  "raw_adjacency_checked": true,
+  "raw_adjacent_exported_transitions": 253780,
+  "action_provenance": "Stage 1 next-event difficulty quantile bin, shifted to current row",
+  "action_is_authenticated_intervention": false,
+  "action_alignment_to_hyperkt_target_verified": false,
+  "reward_is_observational_proxy": true,
+  "offline_rl_policy_evaluation_ready": false,
+  "next_step": "Recover actual item-level action/difficulty mapping or define an explicitly simulated instructional environment; audit temporal state construction and behavior support before RL claims"
+}

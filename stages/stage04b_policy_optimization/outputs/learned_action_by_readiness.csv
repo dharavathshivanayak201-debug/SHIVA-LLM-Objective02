@@ -1,0 +1,4 @@
+readiness,events,fraction_easy,fraction_medium,fraction_hard
+low,4665,1.0,0.0,0.0
+medium,9006,0.4103930712858095,0.5033311125916056,0.08627581612258495
+high,18851,0.0,0.0,1.0

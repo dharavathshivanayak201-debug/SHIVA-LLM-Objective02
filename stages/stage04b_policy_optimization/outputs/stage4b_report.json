@@ -1,0 +1,42 @@
+{
+  "stage": "4B",
+  "seed": 42,
+  "selected_policy": "tree_depth_2",
+  "training_scenario": "moderate",
+  "frozen_stage4ac_reward": "balanced",
+  "reward_parameters": {
+    "wc": 0.3,
+    "wm": 0.4,
+    "ws": 0.25,
+    "wk": 0.05,
+    "tau": 0.7,
+    "h": 0.2
+  },
+  "effect_scenarios": {
+    "zero": 0.0,
+    "small": 0.15,
+    "moderate": 0.4,
+    "large": 0.8
+  },
+  "challenge_credits": [
+    0.2,
+    0.6,
+    1.0
+  ],
+  "assumed_costs": [
+    0.15,
+    0.35,
+    0.6
+  ],
+  "train_events": 222562,
+  "val_events": 23858,
+  "test_events": 32522,
+  "train_only_fit": true,
+  "validation_only_model_selection": true,
+  "test_not_used_for_selection": true,
+  "simulated_action_effects_only": true,
+  "authentic_logged_actions": false,
+  "causal_instructional_improvement_established": false,
+  "sequential_RL_environment_validated": false,
+  "notes": "Policy learns a one-step mapping from pre-response correctness prediction to an assumed reward-maximizing difficulty action."
+}

@@ -1,0 +1,1 @@
+SHIVA-LLM Objective 02 Stage 4A. Empirical response-model calibration + assumption-based one-step contextual bandit simulator. No causal effects or sequential transition dynamics are identified. Do not claim RL policy gains from these outputs.

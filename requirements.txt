@@ -1,5 +1,10 @@
-# Populate with exact versions from the Colab runtime used for the experiments.
+# Libraries used by the Colab notebooks (each notebook pip-installs what it needs).
+# Exact versions were not pinned in the original runs.
 numpy
 pandas
+scipy
 scikit-learn
 matplotlib
+pyarrow
+joblib
+torch        # Stage 1 starter and Stage 2 HyperKT export only

@@ -1,0 +1,38 @@
+{
+  "stage": "4A",
+  "method": "one_step_contextual_bandit_simulator",
+  "seed": 42,
+  "data_provenance": "HyperKT stage3, stage3b audits",
+  "action_labels": {
+    "0": "easy",
+    "1": "medium",
+    "2": "hard"
+  },
+  "action_effect_log_odds_scenarios": {
+    "small": 0.15,
+    "moderate": 0.4,
+    "large": 0.8
+  },
+  "assumed_action_costs": {
+    "easy": 0.15,
+    "medium": 0.35,
+    "hard": 0.6
+  },
+  "reward_weights": {
+    "correctness": 0.6,
+    "efficiency_proxy": 0.2,
+    "suitability_proxy": 0.2
+  },
+  "feature_columns": [
+    "hyperkt_pred_correct",
+    "prior_accuracy",
+    "prior_attempts"
+  ],
+  "train_only_fit": true,
+  "split_policy": "original HyperKT learner-disjoint partitions",
+  "observed_action_is_authentic": false,
+  "counterfactual_effect_identified": false,
+  "longitudinal_transition_model_validated": false,
+  "offline_rl_ready": false,
+  "note": "Only observational correctness calibration is empirically evaluated; action effects are assumed and cannot support real-world causal claims."
+}

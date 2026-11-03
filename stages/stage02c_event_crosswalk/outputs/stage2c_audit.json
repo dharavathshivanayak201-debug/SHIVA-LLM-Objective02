@@ -1,0 +1,34 @@
+{
+  "status": "event_alignment_verified",
+  "stage1_archive": "hyperkt_stage1.zip",
+  "stage2_archive": "hyperkt_stage2.zip",
+  "predictions_archive": "objective02_stage2_hyperkt_states.zip",
+  "checks": {
+    "train": {
+      "events": 222562,
+      "learners": 3222,
+      "windows": 3706,
+      "all_sequences_match": true,
+      "all_predictions_aligned": true
+    },
+    "val": {
+      "events": 23858,
+      "learners": 403,
+      "windows": 445,
+      "all_sequences_match": true,
+      "all_predictions_aligned": true
+    },
+    "test": {
+      "events": 32522,
+      "learners": 402,
+      "windows": 484,
+      "all_sequences_match": true,
+      "all_predictions_aligned": true
+    }
+  },
+  "limitations": [
+    "No claim of complete model-level temporal leakage audit",
+    "Knowledge probabilities are not latent state vectors",
+    "Stage 1 Objective 02 splits are incompatible; use HyperKT split assignments"
+  ]
+}

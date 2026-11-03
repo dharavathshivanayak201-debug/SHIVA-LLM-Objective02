@@ -1,0 +1,17 @@
+{
+  "stage": "4A-B",
+  "input_zip": "objective02_stage4a_simulator.zip",
+  "n_test": 32522,
+  "test_brier": 0.18517242912641335,
+  "test_auc": 0.7419540784568137,
+  "test_calibration_in_the_large": 0.0031622754270410613,
+  "moderate_original_easy_optimal_fraction": 1.0,
+  "moderate_original_oracle_minus_easy": 0.0,
+  "predictive_metrics_are_observational": true,
+  "action_effects_are_assumed": true,
+  "causal_action_effects_identified": false,
+  "sequential_transition_model_validated": false,
+  "real_world_policy_gain_established": false,
+  "ready_for_causal_offline_rl": false,
+  "next_recommendation": "Do not claim causal policy improvement. Review reward dominance; if proceeding, use assumption-labeled one-step contextual-bandit benchmarks only."
+}

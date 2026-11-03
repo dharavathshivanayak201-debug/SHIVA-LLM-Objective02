@@ -1,0 +1,55 @@
+{
+  "stage": "objective02_stage2",
+  "model": "HyperKT_gated",
+  "seed": 42,
+  "checkpoint_sha256": "01d376c18b546f5c861468cf33a7010adcbc322cfdc6ea24dd7ee8fb40699bc5",
+  "source": "Objective01 Stage2 sequences and Stage3B hypergraph",
+  "runtime": "cuda",
+  "event_key": [
+    "split",
+    "window_index",
+    "position"
+  ],
+  "caution": "Window-local coordinates are NOT original ASSISTments event identifiers. Verify original event mapping before joining Stage1 transitions.",
+  "no_test_policy_training": true,
+  "counts": {
+    "train": {
+      "rows": 222562,
+      "users": 3222
+    },
+    "val": {
+      "rows": 23858,
+      "users": 403
+    },
+    "test": {
+      "rows": 32522,
+      "users": 402
+    }
+  },
+  "stage2_manifest": {
+    "stage": 2,
+    "max_len": 200,
+    "protocol": "disjoint target blocks, immediate previous-response inputs",
+    "source_sha256": "f0bf893ed13ab0a64ec0175bf75b79d6d2c973bb63b70093f5811a1995ac86d8",
+    "splits": {
+      "train": {
+        "students": 3330,
+        "windows": 3706,
+        "targets": 222562,
+        "unknown_targets": 0
+      },
+      "val": {
+        "students": 416,
+        "windows": 445,
+        "targets": 23858,
+        "unknown_targets": 0
+      },
+      "test": {
+        "students": 417,
+        "windows": 484,
+        "targets": 32522,
+        "unknown_targets": 0
+      }
+    }
+  }
+}
